@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
 ALLOWED_HOSTS = ["dejonckheereward.be", "www.dejonckheereward.be"]
-CSRF_TRUSTED_ORIGINS = ["dejonckheereward.be", "*.dejonckheereward.be"]
+CSRF_TRUSTED_ORIGINS = ["https://dejonckheereward.be", "https://*.dejonckheereward.be"]
 
 # Application definition
 
