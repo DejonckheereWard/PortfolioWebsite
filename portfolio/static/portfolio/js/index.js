@@ -10,5 +10,8 @@ async function main() {
 
         const bars = document.querySelectorAll(".c-header__nav__item");
         bars.forEach(bar => bar.classList.toggle("change"));
+
+        const icon = document.querySelector(".c-header__nav__toggle span");
+        icon.innerText = icon.innerText === "menu" ? "close" : "menu";
     });
 }

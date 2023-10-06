@@ -186,46 +186,117 @@ h1, h2, h3, h4, h5, h6 {
 
 .c-header {
     display: flex;
+    height: 80px;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     background-color: var(--color-base-dark);
     color: var(--color-base-light);
+    border-bottom: 1px solid var(--color-base-light);
+}
+
+.c-header__title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--color-base-light);
+}
+
+.c-header__subtitle {
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin: 4px 0 0 0;
+    color: var(--color-base-light);
 }
 
 .c-header__nav__toggle {
     display: block;
+    z-index: 10;
+}
+
+.c-header__nav__item {
+}
+
+.c-header__nav__item.change {
+    padding: 16px;
+    width: 100%;
+    text-align: center;
 }
 
 .c-header__nav__list {
     display: none;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     gap: 16px;
-    width: 100%;
+    width: 100%
 }
+
 
 .c-header__nav__list.show {
     display: flex;
+    justify-content: start;
+    position: absolute;
+    margin: auto;
+    gap: 0;
+    top: 81px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-width: 100%;;
+    max-width: 128px;
+    height: calc(100vh - 81px);
+    background-color: var(--color-base-dark);
+    z-index: 0;
+}
+
+.c-about__showcase-picture {
+    position: absolute;
+    min-height: 256px;
+    min-width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.5);
+    background-size: auto 100%;
+}
+
+.c-about__wrapper {
+    padding: 16px;
+}
+
+.c-about h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin: 0 0 1rem;
+    color: var(--color-base-light);
+}
+
+.c-about h2 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin: 0 0 4px;
+    color: #969697;
+}
+
+.c-about p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 0 1rem;
+    color: var(--color-base-light);
+    max-width: 384px;
 }
 
 
 /* Media queries to adjust for mobile/desktop style changing */
 @media screen and (min-width: 768px) {
-    .material-symbols-outlined {
-        font-variation-settings: '' 0,
-        'FILL' 1,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 48
-    }
 
     .c-header__nav__toggle {
         display: none;
     }
 
     .c-header__nav__list {
+        position: relative;
         display: flex;
+        flex-direction: row;
     }
 }
 
