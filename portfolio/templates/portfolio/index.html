@@ -3,43 +3,18 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
-
-    <link rel="stylesheet" href="{% static "portfolio/css/reset.css" %}">
-    <link rel="stylesheet" href="{% static "portfolio/css/style.css" %}?v=0"> <!-- Versioning to update caches -->
-    <script src="{% static "portfolio/js/common.js" %}?v=0"></script>
-    <script src="{% static "portfolio/js/index.js" %}?v=0"></script>
+    {% include "portfolio/snippets/common_head.html" %}
     <title>Portfolio - Ward Dejonckheere</title>
 </head>
 <body>
-<header class="c-header">
-    <a href="">
-        <h1 class="c-header__title">Ward Dejonckheere</h1>
-        <h2 class="c-header__subtitle">Game Developer</h2>
-    </a>
-    <nav>
-        <!-- Hamburger menu to toggle mobile menu, hidden in desktop-->
-        <div class="c-header__nav__toggle">
-            <span class="material-symbols-outlined">
-                menu
-            </span>
+{% include "portfolio/snippets/header.html" %}
+<section class="c-section c-about">
+    <div class="c-about__showcase-picture--item">
+        <div class="c-about__showcase-picture--wrapper">
+            <img src="{% static "portfolio/images/showcase_picture_1.png" %}"
+                 width="1080" height="1920" alt="Showcase Picture">
         </div>
-        <ul class="c-header__nav__list">
-            <li class="c-header__nav__item"><a href="">About</a></li>
-            <li class="c-header__nav__item"><a href="">Projects</a></li>
-            <li class="c-header__nav__item"><a href="">Resume</a></li>
-            <li class="c-header__nav__item"><a href="">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<section class="c-about">
-    <img class="c-about__showcase-picture" src="{% static "portfolio/images/showcase_picture_1.png" %}"
-         alt="Showcase Picture">
+    </div>
     <div class="c-about__wrapper">
         <h2>GAME DEVELOPER</h2>
         <h1>Ward Dejonckheere</h1>
@@ -49,6 +24,63 @@
         </p>
     </div>
 
+</section>
+<section class="c-section c-overview">
+    <div class="c-overview__title">
+        <h1>My Projects</h1>
+    </div>
+
+    <div class="c-overview__project--item">
+        <div class="c-overview__project--wrapper">
+            <a class="c-overview__project--img" href="/projects/limbloss">
+                <img src="{% static "portfolio/images/limbloss.jpg" %}"
+                     width="1080" height="1920" alt="Coop Brawler">
+            </a>
+            <div class="c-overview__project--description">
+                <h1>Limbloss</h1>
+                <p>
+                    A 2D brawler game where you can play with up to 4 players.<br/>
+                    The game was in Unreal Engine with a team of 7 people, of which 2 programmers.<br/>
+                </p>
+                <a class="c-project-link--button" href="/projects/limbloss">View Project</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="c-overview__project--item">
+        <div class="c-overview__project--wrapper">
+            <a class="c-overview__project--img" href="/projects/gp1_raytracer">
+                <img src="{% static "portfolio/images/gp1_raytracer.jpeg" %}"
+                     width="1080" height="1920" alt="Raytracer">
+            </a>
+            <div class="c-overview__project--description">
+                <h1>GP1 - Raytracer</h1>
+                <p>
+                    A software defined raytracer.<br/>
+                    The game was in Unreal Engine with a team of 7 people, of which 2 programmers.<br/>
+                </p>
+                <a class="c-project-link--button" href="/projects/gp1_raytracer">View Project</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="c-overview__project--item">
+        <div class="c-overview__project--wrapper">
+            <a class="c-overview__project--img" href="/projects/gp1_dualrasterizer">
+                <img src="{% static "portfolio/images/gp1_dualrasterizer.png" %}"
+                     width="1080px" height="1920px" alt="Rasterizer">
+            </a>
+            <div class="c-overview__project--description">
+                <h1>GP1 - Dual Rasterizer</h1>
+                <p>
+                    A combinantion of both software and hardware rasterizer. <br/>Able to switch between the 2 using the
+                    given keybinds<br/>
+                    This project was made during the course Graphics Programming 1 at Howest-DAE.<br/>
+                </p>
+                <a class="c-project-link--button" href="/projects/gp1_dualrasterizer">View Project</a>
+            </div>
+        </div>
+    </div>
 </section>
 
 </body>

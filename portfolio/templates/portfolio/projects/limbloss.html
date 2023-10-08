@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "portfolio/snippets/common_head.html" %}
+    <title>Game Project - Limbloss</title>
+</head>
+<body>
+{% include "portfolio/snippets/header.html" %}
+<section class="c-project-page">
+    <div class="c-project-page__header">
+        <h1 class="c-project-page__title">Limbloss</h1>
+        <p class="c-project-page__subtitle">A DAE Game Project (2023)</p>
+    </div>
+    <div class="c-project-page__content">
+        <div class="c-project-page__text">
+            <p>
+                Limbloss is a game project developed by me and 5 other students as part of our Digital Arts and
+                Entertainment
+                education at Howest Kortrijk. <br>
+                The game is a 3D brawler type game where you play as a robot knight with as goal to cut off
+                the limbs of your opponent. The last robot standing wins <br>
+            </p>
+            <p>
+                I worked on the physics based movement of the characters, where the animations are wonky based on the
+                speed of the character. <br>
+            </p>
+            <p>
+                The game dev and download links can be found on <a
+                    href="https://bram-tempelaere.itch.io/group-23">Itch.io</a>
+            </p>
+            <p>
+                The game was also entered as an entry to <a href="https://www.therookies.co/entries/23405">The
+                rookies</a>
+            </p>
+        </div>
+        <div class="c-project-page__image">
+            <img src="{% static 'portfolio/images/limbloss.jpg' %}" alt="Limbloss">
+        </div>
+        <div class="c-project-page__youtube-video">
+            <iframe width="1920" height="1080" src="https://youtube.com/embed/AlrCtoz3JyM?si=u2yOcL2w6Uo7wQBB">
+            </iframe>
+        </div>
+    </div>
+</section>
+</body>
+</html>
