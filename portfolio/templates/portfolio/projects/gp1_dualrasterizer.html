@@ -7,6 +7,27 @@
 </head>
 <body>
 {% include "portfolio/snippets/header.html" %}
-
+<section class="c-project-page">
+    <div class="c-project-page__header">
+        <h1 class="c-project-page__title">GP1 Dual Rasterizer</h1>
+        <p class="c-project-page__subtitle">A Software & Hardware defined rasterizer using c++ & HLSL</p>
+    </div>
+    <div class="c-project-page__content">
+        <div class="c-project-page__text">
+            <p>
+                This project was made for the course Graphics Programming 1 at Howest DAE. The goal of the project was
+                to create a program that could switch between a software and hardware rasterizer.
+                Both renderer's look almost identical, but the software renderer is a lot slower ofcourse.
+            </p>
+            <p>
+                Source code can be found on <a
+                    href="https://github.com/DejonckheereWard/GP1_DualRasterizer">GitHub</a>
+            </p>
+        </div>
+        <div class="c-project-page__image">
+            <img src="{% static 'portfolio/images/gp1_dualrasterizer.png' %}" alt="Dual Rasterizer">
+        </div>
+    </div>
+</section>
 </body>
 </html>
