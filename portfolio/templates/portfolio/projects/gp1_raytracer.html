@@ -3,10 +3,32 @@
 <html lang="en">
 <head>
     {% include "portfolio/snippets/common_head.html" %}
-    <title>Graphics Programming 1 - Raytracer</title>
+    <title>Graphics Programming - Raytracer</title>
 </head>
 <body>
-
 {% include "portfolio/snippets/header.html" %}
+<section class="c-project-page">
+    <div class="c-project-page__header">
+        <h1 class="c-project-page__title">GP1 Raytracer</h1>
+        <p class="c-project-page__subtitle">A Software defined raytracer in c++</p>
+    </div>
+    <div class="c-project-page__content">
+        <div class="c-project-page__text">
+            <p>
+            </p>
+            <p>
+                Source code can be found on <a
+                    href="https://github.com/DejonckheereWard/GP1_DualRasterizer">GitHub</a>
+            </p>
+        </div>
+        <div class="c-project-page__image">
+            <img src="{% static 'portfolio/images/gp1_raytracer.jpeg' %}" alt="Raytracer">
+        </div>
+        <div class="c-project-page__youtube-video">
+            <iframe width="1920" height="1080" src="https://youtube.com/embed/SgASXd0IZIA">
+            </iframe>
+        </div>
+    </div>
+</section>
 </body>
 </html>
