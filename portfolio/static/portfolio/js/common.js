@@ -14,6 +14,20 @@ function common_main() {
         icon.innerText = icon.innerText === "menu" ? "close" : "menu";
     });
 
+
+    let slideShows = document.getElementsByClassName("c-slideshow");
+    for (let i = 0; i < slideShows.length; i++) {
+        let images = slideShows[i].getElementsByTagName("img");
+
+        console.log("Adding event listener");
+        for (let imgIdx = 0; imgIdx < images.length; imgIdx++) {
+            images[imgIdx].addEventListener("animationend", function () {
+                // console.log("Animation ended");
+                slideShows[i].appendChild(images[0]);
+            }, false);
+        }
+
+    }
 }
 
 function main() {

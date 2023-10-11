@@ -260,6 +260,7 @@ a {
     margin: 0 auto;
 }
 
+
 .c-about {
     height: calc(100vw / 1.77777777778);
     min-height: 450px;
@@ -282,7 +283,10 @@ a {
     content: '';
     background-image: linear-gradient(to top, var(--color-base-dark) 0%, var(--color-base-dark) 10%, #01012700 100%);
     position: absolute;
+    height: 30vw;
     min-height: 200px;
+    max-height: 600px;
+    z-index: 50;
     right: 0;
     bottom: 0;
     left: 0;
@@ -330,6 +334,35 @@ a {
     margin: 0 0 1rem;
     color: var(--color-base-light);
     max-width: 384px;
+}
+
+.c-slideshow img {
+    position: absolute;
+}
+
+
+.c-slideshow img:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    z-index: 20;
+}
+
+.c-slideshow img:nth-of-type(2) {
+    z-index: 10;
+}
+
+.c-slideshow img:nth-of-type(n+3) {
+    display: none;
+}
+
+@keyframes fader {
+    from {
+        opacity: 1.0;
+    }
+    to {
+        opacity: 0.0;
+    }
 }
 
 .c-overview {
