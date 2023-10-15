@@ -1,3 +1,4 @@
+{% load static %}
 <header class="c-header">
     <a href="/">
         <h1 class="c-header__title">Ward Dejonckheere</h1>
@@ -14,8 +15,9 @@
             <li class="c-header__nav__item"><a href="/">Home</a></li>
             <li class="c-header__nav__item"><a href="/about">About</a></li>
             <li class="c-header__nav__item"><a href="/contact">Contact</a></li>
+            <li class="c-header__nav__item"><a href="{% static "portfolio/downloads/Ward_Dejonckheere_Resume.pdf" %}"
+                                               target="_blank">Resume</a></li>
             <li class="c-header__nav__item"><a href="/#my-projects">Projects</a></li>
-            {#            <li class="c-header__nav__item"><a href="/resume">Resume</a></li>#}
         </ul>
     </nav>
 </header>

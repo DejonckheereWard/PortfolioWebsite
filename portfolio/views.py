@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, FileResponse
 
 
 # Create your views here.
@@ -12,11 +12,6 @@ def index(request):
 def projects(request, project_name):
     # Get the project name from the URL
     return render(request, f'portfolio/projects/{project_name}.html')
-
-
-def resume(request):
-    # Show the pdf resume
-    return None
 
 
 def about(request):
