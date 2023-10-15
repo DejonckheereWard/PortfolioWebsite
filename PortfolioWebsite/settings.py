@@ -115,6 +115,11 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
+# Using the ManifestStaticFilesStorage to manage static files helps with caching & versioning
+# Helping so that after a new deployment, the user doesn't have to clear his cache to see the changes,
+# nor does he have to wait for the cache to expire
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
+
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
