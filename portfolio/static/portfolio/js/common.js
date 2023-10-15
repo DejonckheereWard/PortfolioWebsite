@@ -14,6 +14,20 @@ function common_main() {
         icon.innerText = icon.innerText === "menu" ? "close" : "menu";
     });
 
+    // Add event listener to the nav links to close the nav bar
+    document.querySelectorAll(".c-header__nav__item").forEach(item => {
+        item.addEventListener("click", function () {
+            const navLinks = document.querySelector(".c-header__nav__list");
+            navLinks.classList.remove("show");
+
+            const bars = document.querySelectorAll(".c-header__nav__item");
+            bars.forEach(bar => bar.classList.remove("change"));
+
+            const icon = document.querySelector(".c-header__nav__toggle span");
+            icon.innerText = "menu";
+        });
+    });
+
 
     let slideShows = document.getElementsByClassName("c-slideshow");
     for (let i = 0; i < slideShows.length; i++) {
