@@ -36,7 +36,8 @@ function common_main() {
         console.log("Adding event listener");
         for (let imgIdx = 0; imgIdx < images.length; imgIdx++) {
             images[imgIdx].addEventListener("animationend", function () {
-                // console.log("Animation ended");
+                // Since the image is already part of this slide show, it is moved instead of copied
+                // (moving it to the back of the list)
                 slideShows[i].appendChild(images[0]);
             }, false);
         }
