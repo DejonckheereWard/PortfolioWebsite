@@ -1,4 +1,4 @@
-{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,22 +9,43 @@
 <link rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
 
-<link rel="stylesheet" href="{% static "portfolio/css/reset.css" %}">
-<link rel="stylesheet" href="{% static "portfolio/css/style.css" %}"> <!-- Versioning to update caches -->
+<link rel="stylesheet" href="../static/portfolio/css/reset.css">
+<link rel="stylesheet" href="../static/portfolio/css/style.css"> <!-- Versioning to update caches -->
 
-<script src="{% static "portfolio/js/common.js" %}"></script>
+<script src="../static/portfolio/js/common.js"></script>
 
-<link rel="apple-touch-icon" sizes="180x180" href="{% static "portfolio/favicon/apple-touch-icon.png" %}">
-<link rel="icon" type="image/png" sizes="32x32" href="{% static "portfolio/favicon/favicon-32x32.png" %}">
-<link rel="icon" type="image/png" sizes="16x16" href="{% static "portfolio/favicon/favicon-16x16.png" %}">
-<link rel="manifest" href="{% static "portfolio/favicon/site.webmanifest" %}">
+<link rel="apple-touch-icon" sizes="180x180" href="../static/portfolio/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../static/portfolio/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../static/portfolio/favicon/favicon-16x16.png">
+<link rel="manifest" href="../static/portfolio/favicon/site.webmanifest">
 
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
     <title>Game Project - Hexercise</title>
 </head>
 <body>
-{% include "portfolio/snippets/header.html" %}
+<header class="c-header">
+    <a href="/">
+        <h1 class="c-header__title">Ward Dejonckheere</h1>
+        <h2 class="c-header__subtitle">Gameplay Programmer</h2>
+    </a>
+    <nav>
+        <!-- Hamburger menu to toggle mobile menu, hidden in desktop-->
+        <div class="c-header__nav__toggle">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </div>
+        <ul class="c-header__nav__list">
+            <li class="c-header__nav__item"><a href="../index.html">Home</a></li>
+            <li class="c-header__nav__item"><a href="../about.html">About</a></li>
+            <li class="c-header__nav__item"><a href="../contact.html">Contact</a></li>
+            <li class="c-header__nav__item"><a href="../static/portfolio/downloads/Ward_Dejonckheere_Resume.pdf"
+                                               target="_blank">Resume</a></li>
+            <li class="c-header__nav__item"><a href="../index.html#my-projects">Projects</a></li>
+        </ul>
+    </nav>
+</header>
 <section class="c-project-page">
     <div class="c-project-page__header">
         <h1 class="c-project-page__title">Hexercise</h1>
@@ -57,14 +78,14 @@
         </div>
         <div class="c-project-page__image c-slideshow">
             <svg class="u-fill-available" width="1920px" height="1080px"></svg>
-            <img src="{% static 'portfolio/images/hexercise/hexercise_02.jpg' %}" alt="Hexercise">
-            <img src="{% static 'portfolio/images/hexercise/hexercise_03.jpg' %}" alt="Hexercise">
-            <img src="{% static 'portfolio/images/hexercise/hexercise_04.jpg' %}" alt="Hexercise">
-            <img src="{% static 'portfolio/images/hexercise/hexercise_05.jpg' %}" alt="Hexercise">
-            <img src="{% static 'portfolio/images/hexercise/hexercise_06.jpg' %}" alt="Hexercise">
-            <img src="{% static 'portfolio/images/hexercise/hexercise_07.jpg' %}" alt="Hexercise">
-            <img src="{% static 'portfolio/images/hexercise/hexercise_08.jpg' %}" alt="Hexercise">
-            <img src="{% static 'portfolio/images/hexercise/hexercise_09.jpg' %}" alt="Hexercise">
+            <img src="../static/portfolio/images/Hexercise/Hexercise_02.jpg" alt="Hexercise">
+            <img src="../static/portfolio/images/Hexercise/Hexercise_03.jpg" alt="Hexercise">
+            <img src="../static/portfolio/images/Hexercise/Hexercise_04.jpg" alt="Hexercise">
+            <img src="../static/portfolio/images/Hexercise/Hexercise_05.jpg" alt="Hexercise">
+            <img src="../static/portfolio/images/Hexercise/Hexercise_06.jpg" alt="Hexercise">
+            <img src="../static/portfolio/images/Hexercise/Hexercise_07.jpg" alt="Hexercise">
+            <img src="../static/portfolio/images/Hexercise/Hexercise_08.jpg" alt="Hexercise">
+            <img src="../static/portfolio/images/Hexercise/Hexercise_09.jpg" alt="Hexercise">
         </div>
         <div class="c-project-page__youtube-video">
             <iframe width="1920" height="1080" src="https://youtube.com/embed/Eguoz-ms7z0">

@@ -1,4 +1,4 @@
-{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,15 +9,15 @@
 <link rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
 
-<link rel="stylesheet" href="{% static "portfolio/css/reset.css" %}">
-<link rel="stylesheet" href="{% static "portfolio/css/style.css" %}"> <!-- Versioning to update caches -->
+<link rel="stylesheet" href="../static/portfolio/css/reset.css">
+<link rel="stylesheet" href="../static/portfolio/css/style.css"> <!-- Versioning to update caches -->
 
-<script src="{% static "portfolio/js/common.js" %}"></script>
+<script src="../static/portfolio/js/common.js"></script>
 
-<link rel="apple-touch-icon" sizes="180x180" href="{% static "portfolio/favicon/apple-touch-icon.png" %}">
-<link rel="icon" type="image/png" sizes="32x32" href="{% static "portfolio/favicon/favicon-32x32.png" %}">
-<link rel="icon" type="image/png" sizes="16x16" href="{% static "portfolio/favicon/favicon-16x16.png" %}">
-<link rel="manifest" href="{% static "portfolio/favicon/site.webmanifest" %}">
+<link rel="apple-touch-icon" sizes="180x180" href="../static/portfolio/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../static/portfolio/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../static/portfolio/favicon/favicon-16x16.png">
+<link rel="manifest" href="../static/portfolio/favicon/site.webmanifest">
 
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
@@ -27,7 +27,7 @@
 <header class="c-header">
     <a href="/">
         <h1 class="c-header__title">Ward Dejonckheere</h1>
-        <h2 class="c-header__subtitle">Game Developer</h2>
+        <h2 class="c-header__subtitle">Gameplay Programmer</h2>
     </a>
     <nav>
         <!-- Hamburger menu to toggle mobile menu, hidden in desktop-->
@@ -37,12 +37,12 @@
             </span>
         </div>
         <ul class="c-header__nav__list">
-            <li class="c-header__nav__item"><a href="/">Home</a></li>
-            <li class="c-header__nav__item"><a href="/about">About</a></li>
-            <li class="c-header__nav__item"><a href="/contact">Contact</a></li>
-            <li class="c-header__nav__item"><a href="{% static "portfolio/downloads/Ward_Dejonckheere_Resume.pdf" %}"
+            <li class="c-header__nav__item"><a href="../index.html">Home</a></li>
+            <li class="c-header__nav__item"><a href="../about.html">About</a></li>
+            <li class="c-header__nav__item"><a href="../contact.html">Contact</a></li>
+            <li class="c-header__nav__item"><a href="../static/portfolio/downloads/Ward_Dejonckheere_Resume.pdf"
                 target="_blank">Resume</a></li>
-            <li class="c-header__nav__item"><a href="/#my-projects">Projects</a></li>
+            <li class="c-header__nav__item"><a href="../index.html#my-projects">Projects</a></li>
         </ul>
     </nav>
 </header>
@@ -64,7 +64,7 @@
             </p>
         </div>
         <div class="c-project-page__image">
-            <img src="{% static 'portfolio/images/gp1_dualrasterizer.webp' %}" alt="Dual Rasterizer">
+            <img src="../static/portfolio/images/gp1_dualrasterizer.webp" alt="Dual Rasterizer">
         </div>
         <div class="c-project-page__youtube-video">
             <iframe width="1920" height="1080" src="https://youtube.com/embed/OcnfED7oi2k">

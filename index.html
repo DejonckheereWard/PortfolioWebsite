@@ -1,5 +1,5 @@
 <!-- Main Page of the portfolio website -->
-{% load static %}
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -10,15 +10,15 @@
 <link rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
 
-<link rel="stylesheet" href="{% static "portfolio/css/reset.css" %}">
-<link rel="stylesheet" href="{% static "portfolio/css/style.css" %}"> <!-- Versioning to update caches -->
+<link rel="stylesheet" href="./static/portfolio/css/reset.css">
+<link rel="stylesheet" href="./static/portfolio/css/style.css"> <!-- Versioning to update caches -->
 
-<script src="{% static "portfolio/js/common.js" %}"></script>
+<script src="./static/portfolio/js/common.js"></script>
 
-<link rel="apple-touch-icon" sizes="180x180" href="{% static "portfolio/favicon/apple-touch-icon.png" %}">
-<link rel="icon" type="image/png" sizes="32x32" href="{% static "portfolio/favicon/favicon-32x32.png" %}">
-<link rel="icon" type="image/png" sizes="16x16" href="{% static "portfolio/favicon/favicon-16x16.png" %}">
-<link rel="manifest" href="{% static "portfolio/favicon/site.webmanifest" %}">
+<link rel="apple-touch-icon" sizes="180x180" href="./static/portfolio/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./static/portfolio/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./static/portfolio/favicon/favicon-16x16.png">
+<link rel="manifest" href="./static/portfolio/favicon/site.webmanifest">
 
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
@@ -28,7 +28,7 @@
 <header class="c-header">
     <a href="/">
         <h1 class="c-header__title">Ward Dejonckheere</h1>
-        <h2 class="c-header__subtitle">Game Developer</h2>
+        <h2 class="c-header__subtitle">Gameplay Programmer</h2>
     </a>
     <nav>
         <!-- Hamburger menu to toggle mobile menu, hidden in desktop-->
@@ -38,30 +38,30 @@
             </span>
         </div>
         <ul class="c-header__nav__list">
-            <li class="c-header__nav__item"><a href="/">Home</a></li>
-            <li class="c-header__nav__item"><a href="/about">About</a></li>
-            <li class="c-header__nav__item"><a href="/contact">Contact</a></li>
-            <li class="c-header__nav__item"><a href="{% static "portfolio/downloads/Ward_Dejonckheere_Resume.pdf" %}"
+            <li class="c-header__nav__item"><a href="index.html">Home</a></li>
+            <li class="c-header__nav__item"><a href="about.html">About</a></li>
+            <li class="c-header__nav__item"><a href="contact.html">Contact</a></li>
+            <li class="c-header__nav__item"><a href="./static/portfolio/downloads/Ward_Dejonckheere_Resume.pdf"
                 target="_blank">Resume</a></li>
-            <li class="c-header__nav__item"><a href="/#my-projects">Projects</a></li>
+            <li class="c-header__nav__item"><a href="index.html#my-projects">Projects</a></li>
         </ul>
     </nav>
 </header>
 <section class="c-section c-about">
     <div class="c-about__showcase-picture--item">
         <div class="c-about__showcase-picture--wrapper c-slideshow">
-            <img src="{% static "portfolio/images/showcase_picture_1.webp" %}"
-                 width="1080" height="1920" alt="Showcase Picture 1">
-            <img src="{% static "portfolio/images/showcase_picture_2.webp" %}"
-                 width="1080" height="1920" alt="Showcase Picture 2">
+            <img src="./static/portfolio/images/showcase_picture_1.webp"
+                 width="1920" height="1080" alt="Showcase Picture 1">
+            <img src="./static/portfolio/images/showcase_picture_2.webp"
+                 width="1920" height="1080" alt="Showcase Picture 2">
         </div>
     </div>
     <div class="c-about__wrapper">
-        <h2>GAME DEVELOPER</h2>
+        <h2>Gameplay Programmer</h2>
         <h1>Ward Dejonckheere</h1>
         <p>
             I'm a Belgian game developer with a passion for games and technology.<br/>
-            I'm currently studying Game Development at the Howest in Kortrijk, Belgium.
+            Graduated from Game Development at the Howest in Kortrijk, Belgium.
         </p>
     </div>
 
@@ -73,9 +73,9 @@
 
     <div class="c-overview__project--item">
         <div class="c-overview__project--wrapper">
-            <a class="c-overview__project--img" href="/projects/hexercise">
-                <img src="{% static "portfolio/images/hexercise/hexercise_01.png" %}"
-                     width="1080" height="1920" alt="Hexercise">
+            <a class="c-overview__project--img" href="./projects/hexercise.html">
+                <img src="./static/portfolio/images/Hexercise/Hexercise_01.png"
+                     width="1920" height="1080" alt="Hexercise">
             </a>
             <div class="c-overview__project--description">
                 <h1>Hexercise</h1>
@@ -85,16 +85,16 @@
                     The goal of hexercise is to cast spells at your opponent by drawing shapes in the air<br/> and
                     gather points by hitting your opponent.
                 </p>
-                <a class="c-project-link--button" href="/projects/hexercise">View Project</a>
+                <a class="c-project-link--button" href="./projects/hexercise.html">View Project</a>
             </div>
         </div>
     </div>
 
     <div class="c-overview__project--item">
         <div class="c-overview__project--wrapper">
-            <a class="c-overview__project--img" href="/projects/limbloss">
-                <img src="{% static "portfolio/images/limbloss.webp" %}"
-                     width="1080" height="1920" alt="Coop Brawler">
+            <a class="c-overview__project--img" href="./projects/limbloss.html">
+                <img src="./static/portfolio/images/limbloss.webp"
+                     width="1920" height="1080" alt="Coop Brawler">
             </a>
             <div class="c-overview__project--description">
                 <h1>Limbloss</h1>
@@ -105,16 +105,16 @@
                     You all play as a robot knight with the goal to cut off all the Limbs of your opponents,<br/>
                     without losing your own limbs or head. The last robot standing dances victorious!
                 </p>
-                <a class="c-project-link--button" href="/projects/limbloss">View Project</a>
+                <a class="c-project-link--button" href="./projects/limbloss.html">View Project</a>
             </div>
         </div>
     </div>
 
     <div class="c-overview__project--item">
         <div class="c-overview__project--wrapper">
-            <a class="c-overview__project--img" href="/projects/gp2_portalclone">
-                <img src="{% static "portfolio/images/GP2_PortalClone/portalview.webp" %}"
-                     width="1080" height="1920" alt="Raytracer">
+            <a class="c-overview__project--img" href="./projects/gp2_portalclone.html">
+                <img src="./static/portfolio/images/GP2_PortalClone/portalview.webp"
+                     width="1920" height="1080" alt="Raytracer">
             </a>
             <div class="c-overview__project--description">
                 <h1>GP2 - Portal Clone</h1>
@@ -124,16 +124,16 @@
                     This project was made during the course Graphics Programming 2 at Howest DAE.<br/>
                     Using the Overlord Engine as a base.<br/>
                 </p>
-                <a class="c-project-link--button" href="/projects/gp2_portalclone">View Project</a>
+                <a class="c-project-link--button" href="./projects/gp2_portalclone.html">View Project</a>
             </div>
         </div>
     </div>
 
     <div class="c-overview__project--item">
         <div class="c-overview__project--wrapper">
-            <a class="c-overview__project--img" href="/projects/gp1_raytracer">
-                <img src="{% static "portfolio/images/gp1_raytracer.webp" %}"
-                     width="1080" height="1920" alt="Raytracer">
+            <a class="c-overview__project--img" href="./projects/gp1_raytracer.html">
+                <img src="./static/portfolio/images/gp1_raytracer.webp"
+                     width="1920" height="1080" alt="Raytracer">
             </a>
             <div class="c-overview__project--description">
                 <h1>GP1 - Raytracer</h1>
@@ -144,16 +144,16 @@
                     We started from a base project with SDL setup, then implemented raytracing.<br/>
                     As an extra I implemented reflections.<br/>
                 </p>
-                <a class="c-project-link--button" href="/projects/gp1_raytracer">View Project</a>
+                <a class="c-project-link--button" href="./projects/gp1_raytracer.html">View Project</a>
             </div>
         </div>
     </div>
 
     <div class="c-overview__project--item">
         <div class="c-overview__project--wrapper">
-            <a class="c-overview__project--img" href="/projects/gp1_dualrasterizer">
-                <img src="{% static "portfolio/images/gp1_dualrasterizer.webp" %}"
-                     width="1080px" height="1920px" alt="Rasterizer">
+            <a class="c-overview__project--img" href="./projects/gp1_dualrasterizer.html">
+                <img src="./static/portfolio/images/gp1_dualrasterizer.webp"
+                     width="1920" height="1080" alt="Rasterizer">
             </a>
             <div class="c-overview__project--description">
                 <h1>GP1 - Dual Rasterizer</h1>
@@ -163,7 +163,7 @@
                     given keybinds<br/>
                     This project was made during the course Graphics Programming 1 at Howest-DAE.<br/>
                 </p>
-                <a class="c-project-link--button" href="/projects/gp1_dualrasterizer">View Project</a>
+                <a class="c-project-link--button" href="./projects/gp1_dualrasterizer.html">View Project</a>
             </div>
         </div>
     </div>
