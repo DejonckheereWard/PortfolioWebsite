@@ -21,7 +21,7 @@
 
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
-    <title>Game Project - Hexercise</title>
+    <title>Internship - VR Kart</title>
 </head>
 <body>
 <header class="c-header">
@@ -48,48 +48,69 @@
 </header>
 <section class="c-project-page">
     <div class="c-project-page__header">
-        <h1 class="c-project-page__title">Hexercise</h1>
-        <p class="c-project-page__subtitle">Hexercise - Can you dodge the magic?<br>A DAE Game Project (2023)</p>
+        <h1 class="c-project-page__title">VR Battle Karts</h1>
     </div>
     <div class="c-project-page__content">
         <div class="c-project-page__text">
             <p>
-                Hexercise is a game project developed by me and 5 other students as part of our Digital Arts and
-                Entertainment
-                education at Howest Kortrijk. <br>
+                During my internship at VR Base in Mechelen, I worked together with 2 other interns on a VR game using physical karts to drive around.<br>
             </p>
             <p>
-                The game was developped for our client, <a href="https://sportinnovatiecampus.be/">Sport Innovatie
-                Campus</a>, who wanted a new variation of game to be
-                played in their sports center, where they previously already had single player kinect games.<br>
-                The goal for our project was to create a multiplayer, ideally versus game that incentivises movement,
-                competition
-                and fun.
+                We started of by getting familiar with multiplayer programming, making a multiplayer mini prototype in Unity using fishnet.
+                In this prototype we learned the basics while trying out all the aspects we would need in the main project (Syncing of data, scene switching, etc.)
             </p>
             <p>
-                The game is a 1v1 versus game where you cast spells at each other to try and win.
-                the casting of spells happens using kinect body trackers<br>
+                We got quite a lot of freedom in the project, but the initial wants from the company were to make a multiplayer vr
+                racing game using the physical karts provided. 
+                However, while brainstorming on how to make this work, we noticed some issues with this concept and decided to pivot to a battle kart game instead.
             </p>
             <p>
-                I mainly worked on the calibration & cleaning of the kinect input, making sure the input
-                is smooth and that the player could be centered in the playfield no matter what the camera
-                setup is.<br>
+                After the brainstorming we started with our first actual prototype, where our goal was managing to interface with the karts, make vr work
+                and also have a way to emulate the game in the editor for easier testing & debugging.
+                While the game is using multiplayer code, we didn't have to account much for de-syncing issues, and didn't have to factor in possible cheating/hacking etc...
+                This is because while multiplayer, the game is still a local multiplayer game, where the players are in the same room, just on multiple machines.
             </p>
+            <h2>
+                Picture of the physical kart we used to drive around
+            </h2>
+            <div class="c-project-page__image">
+                <img src="../static/portfolio/images/VRKart/VRKart_03.jpg" alt="Physical Kart">
+            </div>
+            
+            <h2>Tracking issues...</h2>
+            <p>
+                For the tracking of the kart, we wanted to use the Vive Ultimate Trackers, a fairly new product at the time, but it seemed 
+                like the best option for tracking, as it would have its own independent tracking seperate from the headset.
+                However, while i tried really hard to make it work, I faced a lot of issues using this device, starting with connection issues, 
+                version mismatches, etc... and when I eventually managed to make it work on my dev pc, with local space tracking, trying to make it work in the arena
+                which uses Vive's LBE tracking system, broke everything again.
+                Due to all these issues, we decided to leave this device behind for now, and instead use a controller to track the kart, but making sure that we 
+                have a way to switch to the trackers later on if we manage to get them working.
+            </p>            
+            <h2>Production</h2>
+            <p>
+                Having a working prototype, we started production on the game, making sure to have a good workflow, and 
+                making sure that we could easily test the game in the editor.
+                During production, I mainly worked on the VR & Kart tracking, interfacing with kart using mqtt, 
+                the input system, scene switching & also the main game mode implementation.
+            </p>
+            
+            <h2>Polish</h2>
+            <p>
+                During the last phase of the project, we focused on polishing the game, making sure that all the features worked as intended & making the experience as smooth as
+                possible.
+                Because of time constraints for our artist (who was alone on this project) we filled in to make some VFX assets using Unity's VFX Graph.
+                These assets included a rocket trail, bullet trail, some impact effects, etc. using the existing assets already made & modifying them to fit our needs.
+            </p>
+            
         </div>
+        <h2>Slideshow</h2>
         <div class="c-project-page__image c-slideshow">
             <svg class="u-fill-available" width="1920px" height="1080px"></svg>
-            <img src="../static/portfolio/images/Hexercise/Hexercise_02.jpg" alt="Hexercise">
-            <img src="../static/portfolio/images/Hexercise/Hexercise_03.jpg" alt="Hexercise">
-            <img src="../static/portfolio/images/Hexercise/Hexercise_04.jpg" alt="Hexercise">
-            <img src="../static/portfolio/images/Hexercise/Hexercise_05.jpg" alt="Hexercise">
-            <img src="../static/portfolio/images/Hexercise/Hexercise_06.jpg" alt="Hexercise">
-            <img src="../static/portfolio/images/Hexercise/Hexercise_07.jpg" alt="Hexercise">
-            <img src="../static/portfolio/images/Hexercise/Hexercise_08.jpg" alt="Hexercise">
-            <img src="../static/portfolio/images/Hexercise/Hexercise_09.jpg" alt="Hexercise">
-        </div>
-        <div class="c-project-page__youtube-video">
-            <iframe width="1920" height="1080" src="https://youtube.com/embed/Eguoz-ms7z0">
-            </iframe>
+            <img src="../static/portfolio/images/VRKart/VRKart_01.png" alt="VRKart 01" >
+            <img src="../static/portfolio/images/VRKart/VRKart_GIF_01.gif" alt="VRKart GIF 01" width="600" height="338">
+            <img src="../static/portfolio/images/VRKart/VRKart_02.png" alt="VRKart 02" >
+            <img src="../static/portfolio/images/VRKart/VRKart_GIF_02.gif" alt="VRKart GIF 02" width="600" height="338">            
         </div>
     </div>
 </section>
