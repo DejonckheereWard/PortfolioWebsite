@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+
+<link rel="stylesheet" href="{% static "portfolio/css/reset.css" %}">
+<link rel="stylesheet" href="{% static "portfolio/css/style.css" %}"> <!-- Versioning to update caches -->
+
+<script src="{% static "portfolio/js/common.js" %}"></script>
+
+<link rel="apple-touch-icon" sizes="180x180" href="{% static "portfolio/favicon/apple-touch-icon.png" %}">
+<link rel="icon" type="image/png" sizes="32x32" href="{% static "portfolio/favicon/favicon-32x32.png" %}">
+<link rel="icon" type="image/png" sizes="16x16" href="{% static "portfolio/favicon/favicon-16x16.png" %}">
+<link rel="manifest" href="{% static "portfolio/favicon/site.webmanifest" %}">
+
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    <title>About</title>
+</head>
+<body>
+<header class="c-header">
+    <a href="/">
+        <h1 class="c-header__title">Ward Dejonckheere</h1>
+        <h2 class="c-header__subtitle">Game Developer</h2>
+    </a>
+    <nav>
+        <!-- Hamburger menu to toggle mobile menu, hidden in desktop-->
+        <div class="c-header__nav__toggle">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+        </div>
+        <ul class="c-header__nav__list">
+            <li class="c-header__nav__item"><a href="/">Home</a></li>
+            <li class="c-header__nav__item"><a href="/about">About</a></li>
+            <li class="c-header__nav__item"><a href="/contact">Contact</a></li>
+            <li class="c-header__nav__item"><a href="{% static "portfolio/downloads/Ward_Dejonckheere_Resume.pdf" %}"
+                target="_blank">Resume</a></li>
+            <li class="c-header__nav__item"><a href="/#my-projects">Projects</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="c-about-page">
+    <h1>Ward Dejonckheere</h1>
+    <h2>About me</h2>
+    <div class="c-about-page__wrapper">
+        <img class="c-about-page__profile-pic" src="{% static "portfolio/images/me.webp" %}" alt="Picture of me">
+        <p>
+            Hey, my name is Ward Dejonckheere and I'm 24 year old student, studying Game Development at Howest Digital
+            Arts
+            and Entertainment.
+            I started this education in 2020, and expected to finish it in June 2024.
+            Before starting this education, I studied Multimedia & Communcations Technology,
+            during it's course I learned about the game development course at Howest, but decided to first finish the
+            current education,
+            which i did in June 2020.
+        </p>
+
+    </div>
+
+    <h2>Education</h2>
+    <ul>
+        <li>Howest Digital Arts and Entertainment - Game Development(2020 - ongoing)</li>
+        <li>Howest Multimedia & Communications Technology (2017 - 2020)</li>
+    </ul>
+
+    <h2>Skills</h2>
+    <ul>
+        <li>C++</li>
+        <li>C#</li>
+        <li>Python</li>
+        <li>Javascript</li>
+        <li>HTML</li>
+        <li>CSS</li>
+
+        <li>Unity</li>
+        <li>Unreal Engine</li>
+        <li>Maya</li>
+        <li>Photoshop</li>
+
+        <li>Git</li>
+        <li>Linux</li>
+    </ul>
+
+    <h2>Languages</h2>
+    <ul>
+        <li>Dutch (Native)</li>
+        <li>English (Fluent)</li>
+    </ul>
+</section>
+</body>
+</html>
