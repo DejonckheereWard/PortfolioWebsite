@@ -159,6 +159,9 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: "Montserrat", sans-serif;
@@ -587,6 +590,7 @@ a {
     gap: 16px;
     height: 0;
     padding-bottom: 56.25%;
+    margin-bottom: 16px;
 }
 
 .c-project-page__youtube-video iframe {
