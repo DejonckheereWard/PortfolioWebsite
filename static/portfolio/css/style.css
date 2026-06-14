@@ -336,7 +336,7 @@ a {
     font-weight: 400;
     margin: 0 0 1rem;
     color: var(--color-base-light);
-    max-width: 384px;
+    max-width: 90%;
 }
 
 .c-slideshow img {
@@ -689,6 +689,8 @@ a {
 
     .c-about__wrapper {
         padding: 32px;
+        text-shadow: 1px 1px 2px var(--color-base-dark);
+
     }
 
     .c-about h1 {
@@ -701,7 +703,7 @@ a {
 
     .c-about p {
         font-size: 1.5rem;
-        max-width: 640px;
+        max-width: 90%;
     }
 
 }
@@ -714,10 +716,3 @@ a {
         padding: 8px;
     }
 }
-
-
-
-
-
-
-
