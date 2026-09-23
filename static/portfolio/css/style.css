@@ -147,7 +147,7 @@
 }
 
 :root {
-    --color-base-dark: #010127; /* Base colors of the site, invert for light/dark mode? */
+    --color-base-dark: #0f0f2c; /* Base colors of the site, invert for light/dark mode? */
     --color-base-light: #F6F3ED;
 
     --color-accent-light: #E4FF80;
