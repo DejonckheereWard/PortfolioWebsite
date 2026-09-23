@@ -184,6 +184,14 @@ a {
     text-decoration: none;
 }
 
+b {
+    font-weight: bold;
+}
+
+i {
+    font-style: italic;
+}
+
 /* Google fonts settings */
 .material-symbols-outlined {
     font-variation-settings: 'FILL' 0,
@@ -508,11 +516,39 @@ a {
     color: var(--color-base-light);
 }
 
-.c-about-page ul {
+.c-about-page > ul {
     font-size: 1rem;
     font-weight: 400;
     margin: 0 0 3rem;
     color: var(--color-base-light);
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.c-about-page ul {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-base-light);
+}
+
+.c-skill-list__container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.c-skill-list__item ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+ul ul {
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    list-style-type: circle;
+    list-style-position: inside;
 }
 
 .c-project-page {
@@ -602,6 +638,15 @@ a {
     left: 0;
     top: 0;
     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.c-project-page ul {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 0 3rem;
+    color: var(--color-base-light);
+    list-style-type: disc;
+    list-style-position: inside;
 }
 
 .c-contact {
